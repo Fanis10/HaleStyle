@@ -7,6 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
 	<title>Главная</title>
 </head>
 
@@ -37,7 +38,7 @@
                 </a>
                 <div class="header__subgroup">
                     <div class="header__search">
-                        <input type="search" placeholder="Найти товары">
+                        <input class="search__input" type="search" placeholder="Найти товары">
                         <button class="header__search-btn">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.8972 18.8953L14.9922 14.9902" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,6 +57,12 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 6L6 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 6L18 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="search__clear">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                     </div>
@@ -719,7 +726,7 @@
 							<div class="ai__img">
 								<img src="img/ai-img.webp" alt="">
 								<img src="img/ai-img-1.webp" alt="">
-								<img src="img/ai-img-2.webp" alt="">
+								<img src="img/ai-img-2.png" alt="">
 							</div>
 							<div class="ai__badge ai__badge--1">
 								<div class="ai__badge-text">Точность</div>
@@ -843,9 +850,9 @@
 				<div class="container">
 					<div class="banner__inner">
 						<div class="banner__group">
-							<div class="banner__logo">
+							<a href="index.html" class="banner__logo">
 								<img src="img/logo.svg" alt="">
-							</div>
+							</a>
 							<div class="banner__badge">у твоих родителей отличный вкус</div>
 							<h2 class="banner__title text60">
 								Hale<span>Style</span> —
@@ -1164,9 +1171,9 @@
 				<div class="container">
 					<div class="mailing__inner">
 						<div class="mailing__group">
-							<div class="mailing__logo">
+							<a href="index.html" class="mailing__logo">
 								<img src="img/logo2.svg" alt="">
-							</div>
+							</a>
 							<div class="mailing__text">
 								<p>Будьте в курсе наших акций и новостей — и получите 10% на первый заказ.</p>
 							</div>
@@ -1247,7 +1254,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 </body>
 
 </html>

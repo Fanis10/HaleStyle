@@ -7,6 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
 	<title>Каталог</title>
 </head>
 
@@ -37,7 +38,7 @@
                 </a>
                 <div class="header__subgroup">
                     <div class="header__search">
-                        <input type="search" placeholder="Найти товары">
+                        <input class="search__input" type="search" placeholder="Найти товары">
                         <button class="header__search-btn">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.8972 18.8953L14.9922 14.9902" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,6 +57,12 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 6L6 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 6L18 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="search__clear">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
                     </div>
@@ -283,7 +290,835 @@
 					</div>
 				</div>
 			</section>
-
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__inner">
+						<div class="catalog__top">
+							<div class="catalog__group">
+								<h1 class="catalog__title text60">Каталог одежды</h1>
+								<div class="catalog__text">
+									<p>Стильные, комфортные и качественные вещи для детей на каждый день. <br> Новые коллекции HaleStyle — от базовых футболок до уютных костюмов.</p>
+								</div>
+							</div>
+							<div class="search-results">
+								<div class="search-results__number">12</div>
+								<div class="search-results__group">
+									<div class="search-results__text">товаров найдено</div>
+									<div class="search-results__text2">по выбранным фильтрам</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__text catalog__text--mob">
+							<p>Стильные, комфортные и качественные вещи для детей на каждый день. <br> Новые коллекции HaleStyle — от базовых футболок до уютных костюмов.</p>
+						</div>
+						<div class="filter">
+							<div class="filter__btn btn">
+								<span class="filter__btn-icon">
+									<img src="img/filter-icon.svg" alt="">
+								</span>
+								<span class="filter__btn-text">Фильтры</span>
+							</div>
+							<div class="filter-group">
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Категория</option>
+										<option value="">Худи</option>
+										<option value="">Футболки</option>
+										<option value="">Костюмы</option>
+										<option value="">Штаны</option>
+										<option value="">Платья</option>
+										<option value="">Аксессуары</option>
+									</select>
+								</div>
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Размер</option>
+										<option value="">98</option>
+										<option value="">104</option>
+										<option value="">110</option>
+										<option value="">116</option>
+										<option value="">122</option>
+										<option value="">134</option>
+									</select>
+								</div>
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Цвет</option>
+										<option value="">Розовый</option>
+										<option value="">Красный</option>
+										<option value="">Зеленый</option>
+										<option value="">Коричневый</option>
+									</select>
+								</div>
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Пол</option>
+										<option value="">Мальчик</option>
+										<option value="">Девочка</option>
+										<option value="">Унисекс</option>
+									</select>
+								</div>
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Коллекция</option>
+										<option value="">Коллекция</option>
+										<option value="">Коллекция</option>
+										<option value="">Коллекция</option>
+									</select>
+								</div>
+								<div class="select-wrap">
+									<select class="custom-select">
+										<option value="" disabled selected>Цена</option>
+										<option value="">1000</option>
+										<option value="">5000</option>
+										<option value="">10000</option>
+									</select>
+								</div>
+								<div class="filter__checkbox">
+									<input type="checkbox">
+									<label>В наличии</label>
+								</div>
+								<div class="select-wrap sorting-select">
+									<span class="sorting-text">Сортировка:</span>
+									<select class="custom-select">
+										<option value="" disabled selected>Популярные</option>
+										<option value="">Популярные</option>
+										<option value="">Популярные</option>
+										<option value="">Популярные</option>
+									</select>
+								</div>
+								<div class="filter__clear">
+									<span class="select__clear-icon">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0098 4L4.00977 12" stroke="#5E636F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M4.00977 4L12.0098 12" stroke="#5E636F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+									<span class="select__clear-text">Очистить</span>
+								</div>
+							</div>
+						</div>
+						<div class="filter-menu">
+							<div class="filter__top">
+								<div class="filter__title">
+									<span class="filter__title-icon">
+										<img src="img/filter-icon2.svg" alt="">
+									</span>
+									<span class="filter__title-text">Фильтры</span>
+								</div>
+								<div class="filter__close">
+									<img src="img/close2.svg" alt="">
+								</div>
+							</div>
+							<div class="filter__items">
+								<div class="filter__item">
+									<div class="filter__item-title">Категория</div>
+									<div class="filter__checkboxes">
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Худи</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Футболки</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Костюмы</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Штаны</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Платья</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Аксессуары</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__item-title">Размеры</div>
+									<div class="filter__checkboxes">
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>98</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>104</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>110</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>116</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>122</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>134</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__item-title">Цвет</div>
+									<div class="filter__checkboxes">
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Розовый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Красный</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Зеленый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Коричневый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Коричневый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Коричневый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Коричневый</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Коричневый</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__item-title">Пол</div>
+									<div class="filter__checkboxes">
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Мальчик</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Девочка</label>
+										</div>
+										<div class="filter__checkbox">
+											<input type="checkbox">
+											<label>Унисекс</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__item-title">Цена</div>
+									<div class="filter__inputs">
+										<div class="filter__input">
+											<input type="number" placeholder="От">
+										</div>
+										<div class="filter__input">
+											<input type="number" placeholder="До">
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<div class="filter__item-title">Только в наличии</div>
+									<div class="filter__checkboxes">
+										<div class="filter__checkbox gray-checkbox">
+											<input type="checkbox">
+											<label>Только в наличии</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__btns">
+									<button class="filter__btn2 btn btn-pink">
+										<span class="btn-text">Применить</span>
+									</button>
+									<button class="filter__close2 btn">
+										<img src="img/close2.svg" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="products__cards">
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img.webp" alt="">
+									</a>
+									<div class="product-badge sale">
+										<span>-28%</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Юбка шорты баллон</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">990 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img2.webp" alt="">
+									</a>
+									<div class="product-badge new">
+										<span>New</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Брюки широкие джинсовые</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">4760 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img3.webp" alt="">
+									</a>
+									<div class="product-badge hit">
+										<span>Хит</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Футболка детская оверсайз с надписью сзади</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">2570 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img4.webp" alt="">
+									</a>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Костюм спортивный детский</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">9422 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img.webp" alt="">
+									</a>
+									<div class="product-badge sale">
+										<span>-28%</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Юбка шорты баллон</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">990 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img2.webp" alt="">
+									</a>
+									<div class="product-badge new">
+										<span>New</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Брюки широкие джинсовые</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">4760 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img3.webp" alt="">
+									</a>
+									<div class="product-badge hit">
+										<span>Хит</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Футболка детская оверсайз с надписью сзади</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">2570 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img4.webp" alt="">
+									</a>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Костюм спортивный детский</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">9422 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img.webp" alt="">
+									</a>
+									<div class="product-badge sale">
+										<span>-28%</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Юбка шорты баллон</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">990 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img2.webp" alt="">
+									</a>
+									<div class="product-badge new">
+										<span>New</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Брюки широкие джинсовые</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">4760 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img3.webp" alt="">
+									</a>
+									<div class="product-badge hit">
+										<span>Хит</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Футболка детская оверсайз с надписью сзади</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">2570 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img4.webp" alt="">
+									</a>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Костюм спортивный детский</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">9422 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img.webp" alt="">
+									</a>
+									<div class="product-badge sale">
+										<span>-28%</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Юбка шорты баллон</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">990 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img2.webp" alt="">
+									</a>
+									<div class="product-badge new">
+										<span>New</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Брюки широкие джинсовые</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">4760 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img3.webp" alt="">
+									</a>
+									<div class="product-badge hit">
+										<span>Хит</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Футболка детская оверсайз с надписью сзади</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">2570 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img4.webp" alt="">
+									</a>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Костюм спортивный детский</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">9422 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__btn-wrap">
+							<a class="products__btn btn btn-pink" href="">
+								<span class="btn-text">Показать еще</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products products--2 products--3">
+				<div class="container">
+					<div class="products__inner">
+						<div class="products__top">
+							<h2 class="products__title text60">Недавно просмотренные</h2>
+						</div>
+						<div class="products__cards">
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img5.webp" alt="">
+									</a>
+									<div class="product-badge sale">
+										<span>-28%</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Юбка шорты баллон</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">990 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img6.webp" alt="">
+									</a>
+									<div class="product-badge new">
+										<span>New</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Брюки широкие джинсовые</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">4760 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img7.webp" alt="">
+									</a>
+									<div class="product-badge hit">
+										<span>Хит</span>
+									</div>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Футболка детская оверсайз с надписью сзади</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">2570 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+							<div class="product-card">
+								<div class="product-card__top">
+									<a href="" class="product-card__img">
+										<img src="img/product-img8.webp" alt="">
+									</a>
+									<button class="favorite btn">
+										<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.833313 5.43017C0.83333 4.50284 1.11464 3.59732 1.64009 2.83322C2.16554 2.06912 2.91041 1.48238 3.77632 1.1505C4.64223 0.818619 5.58844 0.757205 6.48999 0.974372C7.39154 1.19154 8.206 1.67707 8.82581 2.36684C8.86947 2.41351 8.92225 2.45073 8.98088 2.47617C9.03951 2.50161 9.10274 2.51474 9.16665 2.51474C9.23056 2.51474 9.29379 2.50161 9.35242 2.47617C9.41105 2.45073 9.46382 2.41351 9.50748 2.36684C10.1253 1.67259 10.94 1.18297 11.843 0.96317C12.746 0.743365 13.6946 0.803791 14.5624 1.1364C15.4302 1.46902 16.1761 2.05805 16.7009 2.82509C17.2257 3.59213 17.5044 4.5008 17.5 5.43017C17.5 7.3385 16.25 8.7635 15 10.0135L10.4233 14.441C10.268 14.6193 10.0766 14.7626 9.86169 14.8613C9.64678 14.9599 9.41335 15.0117 9.17689 15.0132C8.94043 15.0147 8.70635 14.9659 8.49022 14.8699C8.27408 14.774 8.08084 14.6332 7.92331 14.4568L3.33331 10.0135C2.08331 8.7635 0.833313 7.34684 0.833313 5.43017Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="product-card__desc">
+									<a href="" class="product-card__title">
+										<span>Костюм спортивный детский</span>
+									</a>
+									<div class="product-card__price">
+										<span class="product-card__price-new">9422 ₽</span>
+										<span class="product-card__price-old">1 500 ₽</span>
+									</div>
+									<div class="product-card__info">тёмный графит</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner banner--2">
+				<div class="container">
+					<div class="banner__inner">
+						<div class="banner__group">
+							<div class="banner__badge">
+								<div class="banner__badge-icon">
+									<img src="img/icon.svg" alt="">
+								</div>
+								Рассылка HaleStyle
+							</div>
+							<h2 class="banner__title text60">
+								−10% на первый заказ за подписку на новости
+							</h2>
+							<div class="banner__text">
+								<p>Первыми узнавайте о новых коллекциях, закрытых распродажах и получайте персональные подборки.</p>
+							</div>
+						</div>
+						<div class="banner__img6">
+							<img src="img/banner-img6.svg" alt="">
+						</div>
+						<div class="banner__img7">
+							<img src="img/banner-img7.svg" alt="">
+						</div>
+						<div class="banner__img8">
+							<img src="img/banner-img8.svg" alt="">
+							<img src="img/banner-img8-1.svg" alt="">
+							<img src="img/banner-img8-2.svg" alt="">
+						</div>
+						<div class="banner__img9">
+							<img src="img/banner-img9.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mailing">
+				<div class="container">
+					<div class="mailing__inner">
+						<div class="mailing__group">
+							<a href="index.html" class="mailing__logo">
+								<img src="img/logo2.svg" alt="">
+							</a>
+							<div class="mailing__text">
+								<p>Будьте в курсе наших акций и новостей — и получите 10% на первый заказ.</p>
+							</div>
+						</div>
+						<div class="form-email">
+							<input type="email" placeholder="Ваш e-mail">
+							<button class="form-email__btn btn btn-pink">
+								<span class="btn-text">Подписаться</span>
+								<span class="btn-icon">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.33203 8H12.6654" stroke="#671044" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M8 3.33203L12.6667 7.9987L8 12.6654" stroke="#671044" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
     <div class="container">
@@ -345,7 +1180,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 </body>
 
 </html>
