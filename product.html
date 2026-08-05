@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
 	<title>Карточка товара</title>
 </head>
 
@@ -302,33 +303,42 @@
 				<div class="container">
 					<div class="product-main__inner">
 						<div class="product-main__slider">
-							<div class="product-main__slider-big">
+							<div class="slider__big">
 								<div class="swiper mySwiper2">
 									<div class="swiper-wrapper">
-										<div class="product-main__card swiper-slide">
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
-										<div class="product-main__card swiper-slide">
+										</a>
+										<a class="swiper-slide" data-fancybox="gallery" href="img/product-main__img.webp">
 											<img src="img/product-main__img.webp" alt="">
-										</div>
+										</a>
 									</div>
 								</div>
-								<div class="slider__nav">
+								<div class="badge sale">−28%</div>
+								<button class="favorite btn">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.833008 5.43012C0.833025 4.50279 1.11434 3.59728 1.63979 2.83318C2.16524 2.06908 2.91011 1.48234 3.77602 1.15046C4.64192 0.818573 5.58814 0.75716 6.48969 0.974326C7.39123 1.19149 8.2057 1.67702 8.82551 2.36679C8.86916 2.41347 8.92194 2.45068 8.98057 2.47612C9.0392 2.50156 9.10243 2.51469 9.16634 2.51469C9.23025 2.51469 9.29348 2.50156 9.35211 2.47612C9.41074 2.45068 9.46352 2.41347 9.50718 2.36679C10.125 1.67254 10.9397 1.18293 11.8427 0.963124C12.7457 0.743319 13.6943 0.803745 14.5621 1.13636C15.4299 1.46897 16.1758 2.058 16.7006 2.82504C17.2254 3.59208 17.5041 4.50076 17.4997 5.43012C17.4997 7.33846 16.2497 8.76346 14.9997 10.0135L10.423 14.441C10.2677 14.6193 10.0763 14.7626 9.86138 14.8612C9.64648 14.9599 9.41304 15.0117 9.17658 15.0132C8.94012 15.0147 8.70605 14.9658 8.48991 14.8699C8.27378 14.774 8.08053 14.6331 7.92301 14.4568L3.33301 10.0135C2.08301 8.76346 0.833008 7.34679 0.833008 5.43012Z" stroke="#161B40" stroke-opacity="0.6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<div class="magnifier">
+									<img src="img/magnifier.svg" alt="">
+								</div>
+								<div class="slider-nav">
 									<div class="swiper-button-prev">
 										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5.83301 10.8333L0.833008 5.83331L5.83301 0.833313" stroke="#1F2059" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -340,15 +350,174 @@
 										</svg>
 									</div>
 								</div>
-								<div class="magnifier">
-									<img src="img/magnifier.svg" alt="">
-								</div>
-								<div>
-									
+							</div>
+							<div class="slider__small">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/product-main__img2.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img3.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img4.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img5.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img6.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img2.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/product-main__img3.webp" alt="">
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="product-main__slider-small">
-
+						</div>
+						<div class="product-main__desc">
+							<div class="badges">
+								<div class="badge pink-badge">
+									<div class="badge-icon">
+										<img src="img/badge2.svg" alt="">
+									</div>
+									<div class="badge-text">Костюмы и худи</div>
+								</div>
+								<div class="badge blue-badge">
+									<div class="badge-text">Артикул HS-2401-PW</div>
+								</div>
+							</div>
+							<div class="product-main__title">Худи детское оверсайз «Love & Laughter»</div>
+							<div class="product-main__group">
+								<div class="stars-wrap">
+									<div class="stars">
+										<span class="star">
+											<img src="img/star2.svg" alt="">
+										</span>
+										<span class="star">
+											<img src="img/star2.svg" alt="">
+										</span>
+										<span class="star">
+											<img src="img/star2.svg" alt="">
+										</span>
+										<span class="star">
+											<img src="img/star2.svg" alt="">
+										</span>
+										<span class="star">
+											<img src="img/star2.svg" alt="">
+										</span>
+									</div>
+									<div class="stars-number">4.9</div>
+									<div class="stars-text"><span>214</span> отзывов</div>
+								</div>
+								<div class="product-main__info">
+									<span class="product-main__info-icon">
+										<img src="img/info-icon.svg" alt="">
+									</span>
+									<span class="product-main__info-text">В наличии · осталось 12 шт.</span>
+								</div>
+							</div>
+							<div class="price-wrap">
+								<div class="price-group">
+									<div class="price">
+										<div class="price-new">4 290 ₽</div>
+										<div class="price-old">5 990 ₽</div>
+									</div>
+									<div class="price-sale">−28%</div>
+								</div>
+								<div class="postponement">или 1 073 ₽ × 4 платежа без переплаты</div>
+							</div>
+							<div class="size-wrap">
+								<div class="size-title">Размер</div>
+								<div class="size__items">
+									<div class="size__item">
+										<input type="radio">
+										<label>92</label>
+									</div>
+									<div class="size__item">
+										<input type="radio">
+										<label>98</label>
+									</div>
+									<div class="size__item">
+										<input type="radio">
+										<label>104</label>
+									</div>
+									<div class="size__item">
+										<input type="radio">
+										<label>110</label>
+									</div>
+									<div class="size__item">
+										<input type="radio">
+										<label>116</label>
+									</div>
+									<div class="size__item">
+										<input type="radio">
+										<label>122</label>
+									</div>
+								</div>
+								<div class="size-info">Рост 104 см · примерно 3–4 года</div>
+							</div>
+							<div class="colour-wrap">
+								<div class="colour-title">Цвет <span>Пудровый</span></div>
+								<div class="colour-items">
+									<div class="colour-item">
+										<input type="radio">
+										<label></label>
+									</div>
+									<div class="colour-item">
+										<input type="radio">
+										<label></label>
+									</div>
+									<div class="colour-item">
+										<input type="radio">
+										<label></label>
+									</div>
+									<div class="colour-item">
+										<input type="radio">
+										<label></label>
+									</div>
+								</div>
+							</div>
+							<div class="product-main__btns">
+								<div class="calc">
+									<div class="calc-minus">
+										<img src="img/minus.svg" alt="">
+									</div>
+									<input type="text" value="1">
+									<div class="calc-plus">
+										<img src="img/plus.svg" alt="">
+									</div>
+								</div>
+								<button class="product-main__btn btn btn-blue">
+									<span class="btn-icon">
+										<img src="img/basket.svg" alt="">
+									</span>
+									<span class="btn-text">Добавить в корзину</span>
+								</button>
+							</div>
+							<div class="product-main__items">
+								<div class="product-main__item">
+									<div class="product-main__item-icon">
+										<img src="img/product-main__icon.svg" alt="">
+									</div>
+									<div class="product-main__item-desc">
+										<div class="product-main__item-title">Доставка завтра</div>
+										<div class="product-main__item-text">Доставка завтра</div>
+									</div>
+								</div>
+								<div class="product-main__item">
+									<div class="product-main__item-icon">
+										<img src="img/product-main__icon2.svg" alt="">
+									</div>
+									<div class="product-main__item-desc">
+										<div class="product-main__item-title">Примерка перед оплатой</div>
+										<div class="product-main__item-text">Возврат в течение 14 дней</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -418,6 +587,7 @@
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
 </body>
 
 </html>
