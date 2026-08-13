@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 	<title>Навигация</title>
 </head>
 
@@ -25,6 +26,17 @@
 							<li><a href="product.html">Карточка товара</a></li>
 							<li><a href="basket.html">Корзина</a></li>
 							<li><a href="basket-empty.html">Корзина пустая</a></li>
+							<li><a href="making-order.html">Оформление заказа</a></li>
+							<li><a href="order-payment.html">Оплата заказа</a></li>
+							<li><a href="thanks-ordering.html">Спасибо за заказ!</a></li>
+							<li><a href="account.html">Личный кабинет</a></li>
+							<li><a href="orders.html">Мои заказы</a></li>
+							<li><a href="data.html">Мои данные</a></li>
+							<li><a href="delivery-address.html">Адрес доставки</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+
+							<li><a href="favorites.html">Мои избранные товары</a></li>
+							<li><a href="login.html">Вход</a></li>
 						</ul>
 					</div>
 				</div>
@@ -35,6 +47,9 @@
 <script src="js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_KEY&lang=ru_RU" type="text/javascript"></script>
 </body>
 
 </html>
@@ -46,7 +61,7 @@
 	.navigation__list {
 		display: grid;
 		grid-template-columns: 100%;
-		gap: 20%;
+		gap: 20px;
 	}
 	.navigation__list li a {
 		font-size: 20px;

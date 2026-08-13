@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-	<title>Корзина</title>
+	<title>Оформление заказа</title>
 </head>
 
 
-<body style="background: #F9F9F9">
-	<div class="wrapper">
+<body style="background: #F9F9F9;">
+	<div class="wrapper" style="overflow: unset">
 		<header class="header header2">
     <div class="container">
         <div class="header__inner">
@@ -284,268 +284,208 @@
 					</div>
 				</div>
 			</section>
-			<section class="basket">
+			<section class="making-order">
 				<div class="container">
-					<div class="basket__inner">
-						<h1 class="basket__title text60">Корзина</h1>
-						<div class="basket__text">Проверьте выбранные товары перед оформлением заказа.</div>
-						<div class="basket__wrap">
-							<div class="basket__group">
-								<div class="basket__cards">
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Костюм спортивный</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour">Коричневый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
+					<div class="making-order__inner">
+						<h1 class="making-order__title text60">Оформление заказа</h1>
+						<div class="making-order__text">Заполните данные для доставки заказа.</div>
+						<div class="making-order__wrap">
+							<div class="making-order__group">
+								<div class="order">
+									<div class="making-order__subtitle">Ваш заказ</div>
+									<div class="order__cards">
+										<div class="order-card">
+											<div class="order-card__img">
+												<img src="img/order-img.webp" alt="">
+											</div>
+											<div class="order-card__desc">
+												<div class="order-card__group">
+													<div class="order-card__title">Костюм спортивный</div>
+													<div class="order-card__info">Коричневый · 116 · 1 шт.</div>
 												</div>
+												<div class="order-card__price">3 490 ₽</div>
 											</div>
 										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
+										<div class="order-card">
+											<div class="order-card__img">
+												<img src="img/order-img2.webp" alt="">
 											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__sale">−28%</div>
-												<div class="basket-card__price">
-													<span class="basket-card__price-old">5 990 ₽</span>
-													<span class="basket-card__price-new">3 490 ₽</span>
+											<div class="order-card__desc">
+												<div class="order-card__group">
+													<div class="order-card__title">Юбка плиссе</div>
+													<div class="order-card__info">Белый · 110 · 1 шт.</div>
 												</div>
+												<div class="order-card__price">2 570 ₽</div>
 											</div>
 										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
+										<div class="order-card">
+											<div class="order-card__img">
+												<img src="img/order-img3.webp" alt="">
+											</div>
+											<div class="order-card__desc">
+												<div class="order-card__group">
+													<div class="order-card__title">Брюки</div>
+													<div class="order-card__info">Бежевый · 122 · 2 шт.</div>
+												</div>
+												<div class="order-card__price">9 520 ₽</div>
+											</div>
+										</div>
 									</div>
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img2.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Юбка плиссе</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour white">Белый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
-												</div>
-											</div>
+									<div class="basket__items">
+										<div class="basket__item">
+											<div class="basket__item-text">Товаров</div>
+											<div class="basket__item-text2">4 шт.</div>
 										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
-											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__price">
-													<span class="basket-card__price-new">2 570 ₽</span>
-												</div>
-											</div>
+										<div class="basket__item">
+											<div class="basket__item-text">Скидка</div>
+											<div class="basket__item-text2">-3 116 ₽</div>
 										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
+										<div class="basket__item">
+											<div class="basket__item-text">Доставка · Курьер</div>
+											<div class="basket__item-text2 green-text">Бесплатно</div>
+										</div>
 									</div>
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img3.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Брюки</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour brown">Бежевый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
-												</div>
-											</div>
+									<div class="order__price-wrap">
+										<div class="order__price-text">Итого</div>
+										<div class="order__price">
+											<span class="order__price-old">15 580 ₽</span>
+											<span class="order__price-new">12 464 ₽</span>
 										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
-											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__price">
-													<span class="basket-card__price-new">9 520 ₽</span>
-												</div>
-											</div>
-										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
-									</div>
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Костюм спортивный</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour">Коричневый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
-											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__sale">−28%</div>
-												<div class="basket-card__price">
-													<span class="basket-card__price-old">5 990 ₽</span>
-													<span class="basket-card__price-new">3 490 ₽</span>
-												</div>
-											</div>
-										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
-									</div>
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img2.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Юбка плиссе</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour white">Белый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
-											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__price">
-													<span class="basket-card__price-new">2 570 ₽</span>
-												</div>
-											</div>
-										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
-									</div>
-									<div class="basket-card">
-										<div class="basket-card__left">
-											<a href="product.html" class="basket-card__img">
-												<img src="img/basket-img3.webp" alt="">
-											</a>
-											<div class="basket-card__group">
-												<a href="product.html" class="basket-card__title">Брюки</a>
-												<div class="basket-card__subgroup">
-													<div class="basket-card__colour brown">Бежевый</div>
-													<div class="basket-card__size">
-														<span>116</span>
-														размер
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="basket-card__right">
-											<div class="calc">
-												<div class="calc-minus">
-													<img src="img/minus.svg" alt="">
-												</div>
-												<input type="text" value="1">
-												<div class="calc-plus">
-													<img src="img/plus.svg" alt="">
-												</div>
-											</div>
-											<div class="basket-card__subgroup2">
-												<div class="basket-card__price">
-													<span class="basket-card__price-new">9 520 ₽</span>
-												</div>
-											</div>
-										</div>
-										<button class="basket-card__close btn">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 4L4 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M4 4L12 12" stroke="#5D646F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</button>
 									</div>
 								</div>
-								<div class="basket__info">
-									<div class="basket__info-icon">
-										<img src="img/info-icon2.svg" alt="">
+								<div class="contact-info">
+									<div class="making-order__subtitle">Контактные данные</div>
+									<div class="making-order__text2">Чтобы мы могли связаться с вами по заказу.</div>
+									<div class="form">
+										<div class="form-group">
+											<span class="input-title">Имя</span>
+											<input type="text" placeholder="Анна">
+										</div>
+										<div class="form-group">
+											<span class="input-title">Фамилия</span>
+											<input type="text" placeholder="Смирнова">
+										</div>
+										<div class="form-group">
+											<span class="input-title">Телефон</span>
+											<input class="input-phone" type="text" placeholder="+7 (___) ___-__-__">
+										</div>
+										<div class="form-group">
+											<span class="input-title">Email <span>необязательно</span></span>
+											<input type="email" placeholder="anna@mail.ru">
+											<span class="input-info">Отправим электронный чек и трек-номер.</span>
+										</div>
 									</div>
-									<div class="basket__info-text">Оригинальные материалы, обмен и возврат в течение 14 дней.</div>
+								</div>
+								<div class="delivery tabs-inner">
+									<div class="making-order__subtitle">Доставка</div>
+									<div class="making-order__text2">При заказе от 5 000 ₽ доставка бесплатная.</div>
+									<div class="radio-cards">
+										<div data-tab-path="1" class="radio tab tab--active">
+											<input type="radio" name="radio" checked>
+											<label>
+												<span class="radio-desc">
+													<span class="radio-title">Курьер</span>
+													<span class="radio-text">1–2 дня, до двери</span>
+													<span class="radio-price">Бесплатно</span>
+												</span>
+												<span class="radio-check"></span>
+											</label>
+										</div>
+										<div data-tab-path="2" class="radio tab">
+											<input type="radio" name="radio">
+											<label>
+												<span class="radio-desc">
+													<span class="radio-title">Самовывоз</span>
+													<span class="radio-text">Из пункта выдачи</span>
+													<span class="radio-price">Бесплатно</span>
+												</span>
+												<span class="radio-check"></span>
+											</label>
+										</div>
+										<div data-tab-path="3" class="radio tab">
+											<input type="radio" name="radio">
+											<label>
+												<span class="radio-desc">
+													<span class="radio-title">Почта</span>
+													<span class="radio-text">5–9 дней по России</span>
+													<span class="radio-price">390 ₽</span>
+												</span>
+												<span class="radio-check"></span>
+											</label>
+										</div>
+									</div>
+									<div data-content-path="1" class="tab__content tab__content--active">
+										<div class="form">
+											<div class="form-group">
+												<span class="input-title">Город</span>
+												<input type="text" placeholder="Москва">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Улица</span>
+												<input type="text" placeholder="Тверская">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Дом</span>
+												<input type="text" placeholder="18">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Квартира <span>необязательно</span></span>
+												<input type="text" placeholder="42">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Индекс</span>
+												<input type="text" placeholder="125009">
+											</div>
+										</div>
+									</div>
+									<div data-content-path="3" class="tab__content">
+										<div class="form">
+											<div class="form-group">
+												<span class="input-title">Город</span>
+												<input type="text" placeholder="Москва">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Улица</span>
+												<input type="text" placeholder="Тверская">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Дом</span>
+												<input type="text" placeholder="18">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Квартира <span>необязательно</span></span>
+												<input type="text" placeholder="42">
+											</div>
+											<div class="form-group">
+												<span class="input-title">Индекс</span>
+												<input type="text" placeholder="125009">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment">
+									<div class="making-order__subtitle">Комментарий</div>
+									<div class="making-order__text2">Пожелания к заказу</div>
+									<div class="form">
+										<div class="form-group">
+											<textarea maxlength="500" placeholder="Например: позвоните перед доставкой."></textarea>
+										</div>
+										<div class="number-letters">
+											<span>0</span>
+											/
+											<span>500</span>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="basket__group2">
-								<div class="basket__subtitle">Ваш заказ</div>
+								<div class="basket__subtitle">Итог заказа</div>
 								<div class="basket__items">
 									<div class="basket__item">
 										<div class="basket__item-text">Подытог</div>
 										<div class="basket__item-text2">15 580 ₽</div>
 									</div>
-									<div class="basket__item sale">
+									<div class="basket__item">
 										<div class="basket__item-text">Скидка (LOVE20)</div>
 										<div class="basket__item-text2 green-text">-3 116 ₽</div>
 									</div>
@@ -563,42 +503,20 @@
 									<div class="basket__price-old">15 580 ₽</div>
 									<div class="basket__price-group">
 										<div class="basket__price-text">Итого</div>
-										<div class="basket__price-new">15 580 ₽</div>
-									</div>
-								</div>
-								<div class="promocode">
-									<div class="promocode__title">Промокод</div>
-									<div class="promocode__group">
-										<div class="promocode__input">
-											<input type="text" placeholder="Введите код">
+										<div class="basket__price-subgroup">
+											<div class="basket__price-old">15 580 ₽</div>
+											<div class="basket__price-new">12 464 ₽</div>
 										</div>
-										<button class="promocode__btn btn btn-white">
-											<span class="btn-text">Применить</span>
-											<span class="btn-text">Применен</span>
-										</button>
-									</div>
-									<div class="promocode__text3">Неверный промокод</div>
-									<div class="promocode__text">Попробуйте: HALE10 или LOVE20</div>
-									<div class="promocode__text2">
-										Промокод <span class="green-text">HALE10</span> применен. Скидка <span class="green-text">10%.</span>
-									</div>
-									<div class="promocode__text2-1">
-										Промокод <span class="green-text">LOVE20</span> применен. Скидка <span class="green-text">20%.</span>
 									</div>
 								</div>
-								<div class="basket__btns">
-									<button class="basket__btn btn btn-pink3">
-										<span class="btn-text">Оформить заказ</span>
-									</button>
-									<button class="basket__btn2 btn">
-										<span class="btn-icon">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M7.9987 12.6666L3.33203 7.99998L7.9987 3.33331" stroke="#FCFCFC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M12.6654 8H3.33203" stroke="#FCFCFC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</span>
-										<span class="btn-text">Продолжить покупки</span>
-									</button>
+								<a href="" class="basket__btn btn btn-pink3">
+									<span class="btn-text">Перейти к оплате</span>
+								</a>
+								<div class="basket__info2">
+									<span class="basket__info2-icon">
+										<img src="img/info-icon3.svg" alt="">
+									</span>
+									<span class="basket__info2-text">Безопасная оплата и возврат 14 дней</span>
 								</div>
 							</div>
 						</div>
