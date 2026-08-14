@@ -1,0 +1,2909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<title>Отзывы</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header header2">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__group">
+                <div class="burger">
+                    <img src="img/burger.svg" alt="">
+                    <img src="img/burger2.svg" alt="">
+                    <img src="img/burger-mob.svg" alt="">
+                    <img src="img/burger-mob2.svg" alt="">
+                </div>
+                <ul class="header__list">
+                    <li><a href="">Коллекции</a></li>
+                    <li><a href="">Скидки</a></li>
+                    <li><a href="">Новинки</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="header__group2">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                    <img src="img/logo3.svg" alt="">
+                </a>
+                <div class="header__subgroup">
+                    <div class="header__search">
+                        <input class="search__input" type="search" placeholder="Найти товары">
+                        <button class="header__search-btn">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.8972 18.8953L14.9922 14.9902" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.89745 17.0957C13.8729 17.0957 17.0957 13.8729 17.0957 9.89745C17.0957 5.92197 13.8729 2.69922 9.89745 2.69922C5.92197 2.69922 2.69922 5.92197 2.69922 9.89745C2.69922 13.8729 5.92197 17.0957 9.89745 17.0957Z" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.8972 18.8953L14.9922 14.9902" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.89745 17.0957C13.8729 17.0957 17.0957 13.8729 17.0957 9.89745C17.0957 5.92197 13.8729 2.69922 9.89745 2.69922C5.92197 2.69922 2.69922 5.92197 2.69922 9.89745C2.69922 13.8729 5.92197 17.0957 9.89745 17.0957Z" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="header__search-close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#1F2059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="search__clear">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__btns">
+                        <a href="" class="favorite">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.80078 8.54925C1.8008 7.54798 2.10454 6.57027 2.67189 5.74524C3.23923 4.92022 4.04349 4.2867 4.97845 3.92835C5.9134 3.57001 6.93506 3.5037 7.90849 3.73818C8.88192 3.97266 9.76132 4.4969 10.4306 5.24167C10.4777 5.29207 10.5347 5.33225 10.598 5.35972C10.6613 5.38719 10.7296 5.40136 10.7986 5.40136C10.8676 5.40136 10.9358 5.38719 10.9991 5.35972C11.0625 5.33225 11.1194 5.29207 11.1666 5.24167C11.8337 4.49206 12.7133 3.96341 13.6883 3.72608C14.6633 3.48875 15.6875 3.554 16.6245 3.91313C17.5615 4.27227 18.3669 4.90826 18.9336 5.73646C19.5002 6.56466 19.8011 7.54578 19.7964 8.54925C19.7964 10.6097 18.4467 12.1484 17.097 13.498L12.1554 18.2786C11.9878 18.4711 11.7811 18.6258 11.549 18.7323C11.317 18.8388 11.0649 18.8948 10.8096 18.8964C10.5543 18.898 10.3016 18.8453 10.0682 18.7417C9.83484 18.6381 9.62618 18.4861 9.4561 18.2957L4.50012 13.498C3.15045 12.1484 1.80078 10.6187 1.80078 8.54925Z" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.80078 8.54925C1.8008 7.54798 2.10454 6.57027 2.67189 5.74524C3.23923 4.92022 4.04349 4.2867 4.97845 3.92835C5.9134 3.57001 6.93506 3.5037 7.90849 3.73818C8.88192 3.97266 9.76132 4.4969 10.4306 5.24167C10.4777 5.29207 10.5347 5.33225 10.598 5.35972C10.6613 5.38719 10.7296 5.40136 10.7986 5.40136C10.8676 5.40136 10.9358 5.38719 10.9991 5.35972C11.0625 5.33225 11.1194 5.29207 11.1666 5.24167C11.8337 4.49206 12.7133 3.96341 13.6883 3.72608C14.6633 3.48875 15.6875 3.554 16.6245 3.91313C17.5615 4.27227 18.3669 4.90826 18.9336 5.73646C19.5002 6.56466 19.8011 7.54578 19.7964 8.54925C19.7964 10.6097 18.4467 12.1484 17.097 13.498L12.1554 18.2786C11.9878 18.4711 11.7811 18.6258 11.549 18.7323C11.317 18.8388 11.0649 18.8948 10.8096 18.8964C10.5543 18.898 10.3016 18.8453 10.0682 18.7417C9.83484 18.6381 9.62618 18.4861 9.4561 18.2957L4.50012 13.498C3.15045 12.1484 1.80078 10.6187 1.80078 8.54925Z" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="basket.html" class="basket">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3974 8.99609C14.3974 9.95064 14.0183 10.8661 13.3433 11.5411C12.6683 12.216 11.7529 12.5952 10.7983 12.5952C9.84379 12.5952 8.92834 12.216 8.25337 11.5411C7.57841 10.8661 7.19922 9.95064 7.19922 8.99609" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.79297 5.42969H18.8036" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.05913 4.92031C2.82551 5.23181 2.69922 5.61068 2.69922 6.00005V17.9968C2.69922 18.4741 2.88881 18.9318 3.2263 19.2693C3.56378 19.6068 4.0215 19.7964 4.49878 19.7964H17.0957C17.5729 19.7964 18.0307 19.6068 18.3682 19.2693C18.7056 18.9318 18.8952 18.4741 18.8952 17.9968V6.00005C18.8952 5.61068 18.7689 5.23181 18.5353 4.92031L16.7358 2.5206C16.5681 2.29711 16.3508 2.1157 16.1009 1.99077C15.851 1.86583 15.5755 1.80078 15.2961 1.80078H6.29833C6.01896 1.80078 5.74342 1.86583 5.49355 1.99077C5.24367 2.1157 5.02631 2.29711 4.85869 2.5206L3.05913 4.92031Z" stroke="white" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3974 8.99609C14.3974 9.95064 14.0183 10.8661 13.3433 11.5411C12.6683 12.216 11.7529 12.5952 10.7983 12.5952C9.84379 12.5952 8.92834 12.216 8.25337 11.5411C7.57841 10.8661 7.19922 9.95064 7.19922 8.99609" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.79297 5.42969H18.8036" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.05913 4.92031C2.82551 5.23181 2.69922 5.61068 2.69922 6.00005V17.9968C2.69922 18.4741 2.88881 18.9318 3.2263 19.2693C3.56378 19.6068 4.0215 19.7964 4.49878 19.7964H17.0957C17.5729 19.7964 18.0307 19.6068 18.3682 19.2693C18.7056 18.9318 18.8952 18.4741 18.8952 17.9968V6.00005C18.8952 5.61068 18.7689 5.23181 18.5353 4.92031L16.7358 2.5206C16.5681 2.29711 16.3508 2.1157 16.1009 1.99077C15.851 1.86583 15.5755 1.80078 15.2961 1.80078H6.29833C6.01896 1.80078 5.74342 1.86583 5.49355 1.99077C5.24367 2.1157 5.02631 2.29711 4.85869 2.5206L3.05913 4.92031Z" stroke="#1F2059" stroke-width="1.79956" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="header__btn btn btn-blue">
+                        <span class="btn-text">Войти</span>
+                        <span class="btn-icon">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.1865 21.1975V19.1786C19.1865 18.1076 18.761 17.0806 18.0038 16.3233C17.2465 15.566 16.2195 15.1406 15.1485 15.1406H9.09164C8.02071 15.1406 6.99365 15.566 6.23639 16.3233C5.47913 17.0806 5.05371 18.1076 5.05371 19.1786V21.1975" stroke="#F7FCFF" stroke-width="2.01897" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.12 11.1032C14.35 11.1032 16.1579 9.29536 16.1579 7.06527C16.1579 4.83519 14.35 3.02734 12.12 3.02734C9.88987 3.02734 8.08203 4.83519 8.08203 7.06527C8.08203 9.29536 9.88987 11.1032 12.12 11.1032Z" stroke="#F7FCFF" stroke-width="2.01897" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__bg"></div>
+        <div class="header-menu__inner">
+            <div class="header-menu__top">
+                <a class="header-menu__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header-menu__close">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.75 11.25L11.25 33.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.25 11.25L33.75 33.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="header-menu__list">
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Флис и термо</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Кофты и футболки</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Брюки и шорты</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Распродажа</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Флис и термо</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Кофты и футболки</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Брюки и шорты</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Распродажа</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Флис и термо</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Кофты и футболки</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Кофты и футболки</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu__item" href="">
+                    <span class="header-menu__item-icon">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1 7L7 1" stroke="#ACAFB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                        <span class="header-menu__item-text">Кофты и футболки</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-menu__group">
+                <div class="header-menu__subtitle">
+                    <span class="pink-text">Подпишитесь,</span> <br>
+                    чтоб получать скидки
+                    <span class="inline">и новинки первыми</span>
+                </div>
+                <div class="header-menu__icon">
+                    <img src="img/header-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="form-email__wrap">
+                <div class="form-email">
+                    <input type="email" placeholder="Ваш e-mail">
+                    <button class="form-email__btn btn btn-pink">
+                        <span class="btn-text">Подписаться</span>
+                        <span class="btn-icon">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.33203 8H12.6654" stroke="#671044" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M8 3.33203L12.6667 7.9987L8 12.6654" stroke="#671044" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<main class="content">
+			<section class="feedback-main">
+				<div class="container">
+					<div class="feedback-main__inner">
+						<div class="feedback-main__desc">
+							<div class="feedback-main__badge">Отзывы покупателей</div>
+							<h1 class="feedback-main__title">Более 1000 счастливых родителей <span>❤</span></h1>
+							<div class="feedback-main__text">Нам доверяют семьи по всей России. Делимся настоящими фотографиями и отзывами наших покупателей.</div>
+							<div class="feedback-main__subgroup">
+								<a class="feedback-main__btn btn btn-pink2" href="">
+									<span class="btn-text">Оставить отзыв</span>
+								</a>
+								<div class="feedback-main__info">4.9 из 5 · 1 042 оценки</div>
+							</div>
+						</div>
+						<div class="feedback-main__images">
+							<div class="feedback-main__images-top">
+								<div class="feedback-main__img">
+									<img src="img/feedback-main__img.webp" alt="">
+									<img src="img/feedback-main__img-1.webp" alt="">
+								</div>
+								<div class="feedback-main__img">
+									<img src="img/feedback-main__img3.webp" alt="">
+									<img src="img/feedback-main__img3-1.webp" alt="">
+									<div class="images-info">
+										<div class="images-info__title">1000+ отзывов</div>
+										<div class="images-info__text">с настоящими фото</div>
+									</div>
+								</div>
+							</div>
+							<div class="feedback-main__images-bottom">
+								<div class="feedback-main__img">
+									<img src="img/feedback-main__img2.webp" alt="">
+									<img src="img/feedback-main__img2-1.webp" alt="">
+								</div>
+								<div class="feedback-main__img">
+									<img src="img/feedback-main__img4.webp" alt="">
+									<img src="img/feedback-main__img4-1.webp" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="feedback3">
+				<div class="container">
+					<div class="feedback3__inner tabs-inner">
+						<div class="feedback3__badge">Лента отзывов</div>
+						<div class="feedback3__group">
+							<h2 class="feedback3__title text60">Что говорят родители о Hale Style</h2>
+							<div class="feedback3__text">Отзывы публикуют только покупатели с подтверждённым заказом — каждое фото настоящее.</div>
+						</div>
+						<div class="tabs-head">
+							<div data-tab-path="1" class="tab tab--active">Все</div>
+							<div data-tab-path="2" class="tab">★★★★★</div>
+							<div data-tab-path="3" class="tab">★★★★☆</div>
+							<div data-tab-path="4" class="tab">★★★☆☆</div>
+							<div data-tab-path="5" class="tab">Фото</div>
+							<div data-tab-path="6" class="tab">Видео</div>
+							<div data-tab-path="7" class="tab">С фото детей</div>
+							<div data-tab-path="8" class="tab">Новые</div>
+							<div data-tab-path="9" class="tab">Популярные</div>
+						</div>
+						<div class="tabs-body">
+							<div data-content-path="1" class="tab__content tab__content--active">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="2" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="3" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="4" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="5" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="6" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="7" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="8" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div data-content-path="9" class="tab__content">
+								<div class="feedback3__slider">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 96</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img.webp" alt="">
+													<div class="like"><span>❤</span> 82</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star3.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">4</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать. После пяти стирок цвет как новый, ничего не скаталось. Отдельное спасибо за упаковку — как подарок.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+											<div class="swiper-slide feedback2-card2">
+												<div class="feedback2-card2__img">
+													<img src="img/feedback2-img2.webp" alt="">
+													<div class="like"><span>❤</span> 7</div>
+												</div>
+												<div class="feedback2-card2__desc">
+													<div class="feedback2-card2__top">
+														<div class="user">
+															<div class="user__img">
+																МК
+															</div>
+															<div class="user__desc">
+																<div class="user__name">
+																	Марина К.
+																	<span class="verification">
+																	<img src="img/verification.svg" alt="">
+																</span>
+																</div>
+																<div class="user__text">12 июля 2026 · Размер 104, пудровый</div>
+															</div>
+														</div>
+														<div class="stars">
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+															<div class="star">
+																<img src="img/star2.svg" alt="">
+															</div>
+														</div>
+														<div class="stars-mob">
+															<span class="stars-number">5</span>
+															<span class="star">
+																<img src="img/star2.svg" alt="">
+															</span>
+														</div>
+													</div>
+													<div class="feedback2-card2__text">
+														<p>Худи невероятно мягкое, дочка не хочет снимать.</p>
+													</div>
+													<div class="feedback2-card2__items">
+														<div class="feedback2-card2__item">Худи</div>
+														<div class="feedback2-card2__item">Шорты</div>
+														<div class="feedback2-card2__item">Лонгслив</div>
+													</div>
+													<div class="feedback2-card2__date">Покупка: 22 февраля 2026</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages2 advantages2--2">
+				<div class="container">
+					<div class="advantages2__inner">
+						<div class="advantages2__items">
+							<div class="advantages2__item">
+								<div class="advantages2__item-icon">
+									<img src="img/advantages2-icon.svg" alt="">
+								</div>
+								<div class="advantages2__item-title">Натуральные материалы</div>
+								<div class="advantages2__item-text">Хлопок 92% с сертификатом <br> OEKO-TEX</div>
+							</div>
+							<div class="advantages2__item">
+								<div class="advantages2__item-icon">
+									<img src="img/advantages2-icon2.svg" alt="">
+								</div>
+								<div class="advantages2__item-title">Быстрая доставка</div>
+								<div class="advantages2__item-text">1–3 дня по всей России</div>
+							</div>
+							<div class="advantages2__item">
+								<div class="advantages2__item-icon">
+									<img src="img/advantages2-icon3.svg" alt="">
+								</div>
+								<div class="advantages2__item-title">Лёгкий обмен</div>
+								<div class="advantages2__item-text">Меняем размер за один <br> визит курьера</div>
+							</div>
+							<div class="advantages2__item">
+								<div class="advantages2__item-icon">
+									<img src="img/advantages2-icon4.svg" alt="">
+								</div>
+								<div class="advantages2__item-title">Высокое качество</div>
+								<div class="advantages2__item-text">Двойные швы и плотный <br> футер 320 г/м²</div>
+							</div>
+							<div class="advantages2__item">
+								<div class="advantages2__item-icon">
+									<img src="img/advantages2-icon5.svg" alt="">
+								</div>
+								<div class="advantages2__item-title">Производство в России</div>
+								<div class="advantages2__item-text">Собственный цех в Иванове</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner banner--2 banner--3">
+				<div class="container">
+					<div class="banner__inner">
+						<div class="banner__group">
+							<div class="banner__badge">
+								<div class="banner__badge-icon">
+									<img src="img/icon.svg" alt="">
+								</div>
+								Рассылка HaleStyle
+							</div>
+							<h2 class="banner__title text60">
+								−10% на <br> первый заказ <span class="inline">за подписку</span> на Telegram
+							</h2>
+							<div class="banner__text">
+								<p>Первыми узнавайте о новых коллекциях, закрытых распродажах и получайте персональные подборки.</p>
+							</div>
+							<button class="banner__btn2 btn btn-pink">
+								<span class="btn-text">Подписаться</span>
+							</button>
+						</div>
+						<div class="banner__img6">
+							<img src="img/banner-img6.svg" alt="">
+						</div>
+						<div class="banner__img7">
+							<img src="img/banner-img7.svg" alt="">
+						</div>
+						<div class="banner__img8">
+							<img src="img/banner-img8.svg" alt="">
+							<img src="img/banner-img8-1.svg" alt="">
+							<img src="img/banner-img8-2.svg" alt="">
+						</div>
+						<div class="banner__img9">
+							<img src="img/banner-img9.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mailing">
+				<div class="container">
+					<div class="mailing__inner">
+						<div class="mailing__group">
+							<a href="index.html" class="mailing__logo">
+								<img src="img/logo2.svg" alt="">
+							</a>
+							<div class="mailing__text">
+								<p>Будьте в курсе наших акций и новостей — и получите 10% на первый заказ.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-top">
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <div class="footer__item-title">Каталог</div>
+                        <ul class="footer__item-list">
+                            <li><a href="">Флис и термо</a></li>
+                            <li><a href="">Кофты и футболки</a></li>
+                            <li><a href="">Брюки и шорты</a></li>
+                            <li><a href="">Распродажа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-title">Покупателям</div>
+                        <ul class="footer__item-list">
+                            <li><a href="">Оплата</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Обмен и возврат</a></li>
+                            <li><a href="">Карта лояльности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-title">О компании</div>
+                        <ul class="footer__item-list">
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Сертификаты</a></li>
+                            <li><a href="">Вакансии</a></li>
+                            <li><a href="">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-title">Информация</div>
+                        <ul class="footer__item-list">
+                            <li><a href="">Реквизиты</a></li>
+                            <li><a href="">Контакты</a></li>
+                            <li><a href="">Написать нам</a></li>
+                            <li><a href="">Документы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer__text">
+                    <p>2026 © HaleStyle. Все права защищены.</p>
+                </div>
+                <div class="footer__items2">
+                    <div class="footer__item2">VISA</div>
+                    <div class="footer__item2">MIR</div>
+                    <div class="footer__item2">MC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_KEY&lang=ru_RU" type="text/javascript"></script>
+</body>
+
+</html>
+
+<style>
+	@media screen and (max-width: 992px) {
+		body {
+			background: #F9F9F9;
+		}
+	}
+</style>
+
